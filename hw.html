@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(transparent 75%, rgba(0, 0, 0, 0.5) 100%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.1),
+          5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-reflect: below 0px
+          linear-gradient(transparent, rgb(0, 0, 0, 0.5));
+      }
+      .box {
+        width: 300px;
+        padding: 100px 20px 130px 20px;
+        background: linear-gradient(
+            90deg,
+            transparent 90%,
+            rgba(0, 0, 0, 0.2) 100%
+          ),
+          linear-gradient(90deg, rgba(20, 20, 20, 0.1) 1%, transparent 10%),
+          white;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+        transition: transform 0.1s ease-in;
+      }
+      .box:hover {
+        transform: scale(1.1);
+      }
+      @keyframes up {
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+      .box:nth-child(4) {
+        background: linear-gradient(
+            90deg,
+            rgba(20, 20, 20, 0.1) 1%,
+            transparent 10%
+          ),
+          white;
+      }
+      .box:nth-child(1) {
+        background: linear-gradient(
+            90deg,
+            transparent 90%,
+            rgba(0, 0, 0, 0.2) 100%
+          ),
+          white;
+      }
+      img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+        animation: up 3s infinite ease-in;
+      }
+      p {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="https://picsum.photos/100/100/?random=1" />
+        <p>
+          專題臺灣民眾高速，那天對你，原料情緒很好你不情節就能銀行代理，組織事實一邊物品傷心提前職責提交，授權組圖一部腦袋都會風雲精選確定網上笑容私人，性格遺憾國務院去了新竹組合主板。
+        </p>
+      </div>
+      <div class="box">
+        <img src="https://picsum.photos/100/100/?random=2" />
+        <p>
+          專題臺灣民眾高速，那天對你，原料情緒很好你不情節就能銀行代理，組織事實一邊物品傷心提前職責提交，授權組圖一部腦袋都會風雲精選確定網上笑容私人，性格遺憾國務院去了新竹組合主板。
+        </p>
+      </div>
+      <div class="box">
+        <img src="https://picsum.photos/100/100/?random=3" />
+        <p>
+          專題臺灣民眾高速，那天對你，原料情緒很好你不情節就能銀行代理，組織事實一邊物品傷心提前職責提交，授權組圖一部腦袋都會風雲精選確定網上笑容私人，性格遺憾國務院去了新竹組合主板。
+        </p>
+      </div>
+      <div class="box">
+        <img src="https://picsum.photos/100/100/?random=4" />
+        <p>
+          專題臺灣民眾高速，那天對你，原料情緒很好你不情節就能銀行代理，組織事實一邊物品傷心提前職責提交，授權組圖一部腦袋都會風雲精選確定網上笑容私人，性格遺憾國務院去了新竹組合主板。
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
